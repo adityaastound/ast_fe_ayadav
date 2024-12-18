@@ -1,37 +1,37 @@
 document.addEventListener("DOMContentLoaded", function () {
   
-  const form = document.getElementById("contact_form");
- 
-  form.onsubmit = function (event) {
-    event.preventDefault(); 
+    const form = document.getElementById("contact_form");
+   
+    form.onsubmit = function (event) {
+      event.preventDefault(); 
+  
+      const name = document.getElementById("name").value;
+  
+      alert(`Hi ${name}! Thank you for contacting us!`);
+    };
+  });
 
-    const name = document.getElementById("name").value;
 
-    alert(`Hi ${name}! Thank you for contacting us!`);
-  };
-});
-
-
-let slideIndex = 0;
+  let slideIndex = 0;
 showSlides();
 
 function showSlides() {
-let slides = document.querySelectorAll(".slide");
+  let slides = document.querySelectorAll(".slide");
 
+  
+  slides.forEach(slide => {
+    slide.style.display = "none";
+  });
 
-slides.forEach(slide => {
-  slide.style.display = "none";
-});
+  slideIndex++;
 
-slideIndex++;
+  if (slideIndex > slides.length) {
+    slideIndex = 1;
+  }
 
-if (slideIndex > slides.length) {
-  slideIndex = 1;
-}
+  slides[slideIndex - 1].style.display = "block";
 
-slides[slideIndex - 1].style.display = "block";
-
-setTimeout(showSlides, 2000); 
+  setTimeout(showSlides, 2000); 
 }
 
 
