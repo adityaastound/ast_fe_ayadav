@@ -11,101 +11,142 @@
 <body>
     <header>
         <section>
-        <nav class="header_tabs">
-            <a id="nav_link" href="/">Home</a>
-            <a id="nav_link" href="/">Why Us?</a>
-            <a id="nav_link" href="/">What We Do?</a>
-            <a id="nav_link" href="/"> Trending News</a>
-            <a id="nav_link" href="/">Contact Us</a>
-            <a id="nav_link" href="/">Privacy Policy </a>
-            <a id="nav_link" href="/">Terms of Use</a>
+        <nav class="header">
+            <a class="menu_item" href="#home">Home</a>
+            <a class="menu_item" href="#why_us">Why Us?</a>
+            <a class="menu_item" href="#what_we_do">What We Do?</a>
+            <a class="menu_item" href="#trending_news"> Trending News</a>
+            <a class="menu_item" href="#contact_form">Contact Us</a>
+            <a class="menu_item" href="#privacy">Privacy Policy </a>
+            <a class="menu_item" href="#terms">Terms of Use</a>
         </nav>
     </section>
     </header>
     <!-- content  -->
-    <h2>Welcome to Astound Digital</h2>
     
-    <h2 class="choose_us_heading">Why Choose Us?</h3>
-     <div class="choose_us">
-        <div id="choose_box">
+    <section class="slideshow_container" id="home">
+        <div class="slide fade">
+        <img src="images/image1.jpg" alt="Image 1" >
+          <div class="text"> 
+            <h1>Welcome to Astound Digital</h1>
+           <p>_____Navigating what's next.</h4> 
+        </div>
+        </div>
+        <div class="slide fade"> 
+        <img src="images/image2.jpg" alt="Image 2" >
+        <div class="text"> 
+           <h1>Innovative Solutions</h1> 
+           <p> Delivering top-notch services to meet your needs.</p>
+        </div>
+        </div>
+        <div class="slide fade">
+        <img src="images/image3.jpg" alt="Image 3" >
+        <div class="text"> 
+           <h1>Quality First</h1> 
+           <p> We focus on quality and customer satisfaction.</p>
+        </div>
+        </div>
+        <div class="slide fade">
+        <img src="images/image4.jpg" alt="Image 4" >
+        <div class="text"> 
+            <h1>Join Us Today </h3>
+           <p> Experience excellence in every product we offer.</p>
+        </div>
+        </div>
+    </section>
+     
+    <section class="section_2" id="why_us">
+    <h2 class="section_2_heading">Why Choose Us?</h3>
+     <div class="cards">
+        <div class="box_big">
             <h3 class="small_h3">Reliable Quality</h3>
             <p>We offer products crafted with care and precision, ensuring that every item meets the highest quality standards.</p>
         </div>
-        <div id="choose_box">
+        <div class="box_big">
             <h3 class="small_h3">Customer Satisfaction</h3>
             <p>We prioritize customer satisfaction, offering top-notch support and services to meet your needs.</p>
         </div>
     </div>
-        <div class="what_we_do">
+</section>
+    <!-- what we do  -->
+        <section class="section_3" id="what_we_do">
             <h2>What We Do?</h3>
             <p>We specialize in providing high-quality products and services that cater to the unique needs of our customers. Our focus is on delivering value, reliability, and exceptional customer experiences. Whether you're looking for product design, consulting services, or custom solutions, we have the expertise to deliver excellence in every project.</p>
-       <div class="boxes_2">
-            <div id="box_2">
+       <div class="cards_2">
+            <div class="box_med">
             <h3>Product Development</h3>
             <p>Our team of experts is dedicated to designing and developing products that not only meet but exceed industry standards.</p>
         </div>
-        <div id="box_2">
+        <div class="box_med">
             <h3>Consulting Services</h3>
             <p>We offer expert consulting services to help businesses enhance their operations and drive long-term success.</p>
         </div>
-        <div id="box_2">
+        <div class="box_med">
             <h3>Custom Solutions</h3>
             <p>We tailor solutions to your specific needs, ensuring that you get the most out of every interaction with us.</p>
         </div>
     </div>
-        </div>
+</section>
         <!-- Trending News About Us -->
 
-    <div class="trending_news">
-        <h2 class="trending_new_heading">Trending News About Us</h2>
+    <section class="section_4" id="trending_news">
+        <h2 class="section_4_heading">Trending News About Us</h2>
         
-        <div class="boxes_3">
-            <div id="box_3">
+        <div class="cards_3">
+            <div class="box_small">
             <h3>New Product Launch</h3>
             <p>We are excited to announce the launch of our latest product. Stay tuned for more details.</p>
         </div> 
-        <div id="box_3">
+        <div class="box_small">
             <h3>Customer Review of the Month</h3>
             <p>Check out what our happy customers have to say about our products and services.</p>
         </div>
-        <div id="box_3">
+        <div class="box_small">
             <h3>Behind the Scenes</h3>
             <p>Get a sneak peek into how we create and design the products you love.</p>
         </div>
-        <div id="box_3">
+        <div class="box_small">
             <h3>Upcoming Events</h3>
             <p>Join us at our upcoming events and learn more about what we do and our future plans.</p>
         </div>
         
     </div>
-    </div>
+</section>
     <!-- contact  -->
-     <div class="contact_div">
+     <section class="section_5" id="contact_form">
         <h2>Contact Us</h2>
-     </div>
+        <form class="contact_div2">  
+        <input type="text" id="name" placeholder="Your Name" required> <br>
+        <input type="email" id="email" placeholder="Your Email" required> <br>
+        <textarea name="message" id="message" placeholder="Your Message" type="text" required></textarea>
+        <button type="submit">Send Message</button>
+        </form>
+    </section>
      <!-- privacy policy  -->
-      <div class="privacy">
+      <section class="section_6" id="privacy">
       <h2>Privacy Policy </h2>
       <p>At Astound Digital, we respect your privacy. This Privacy Policy explains how we collect, use, and protect your personal information.    </p>
        <h4>Information We Collect</h4>
        <p>We collect personal data such as name, email, and address when you sign up, make a purchase, or contact us.</p>
         <h4>How We Use Your Information</h4>
         <p>We use the information to process your orders, improve our website, send you marketing materials, and enhance your overall shopping experience.</p>
-    </div>
+      </section>
 <!-- terms of service  -->
- <div class="terms">
+ <section class="section_7" id="terms">
     <h2>Terms of Service</h2>
     <p>By using our website and services, you agree to comply with the following terms and conditions. Please read these terms carefully before proceeding.</p>
- </div>
+ </section>
         <footer>
             <section class="footer_data"> 
                 <nav class="footer_nav">
                     <p> &copy;2024 Astound Digital. All Rights Reserved.</p> 
-                    <a href="">Privacy Policy</a>
-                    <a href="">Terms of Use</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Use</a>
                 </nav>
             </section>
         </footer>
+    <script src="scripts/index.js"></script>
+
 </body>
 
 </html>
