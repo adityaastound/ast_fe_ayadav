@@ -4,14 +4,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A modern and responsive website for Astound Digital, showcasing its services, products, trending news, and policies with a contact form for user interaction.">
+    <meta name="keywords" content="Astound Digital, Innovative Solutions, Reliable Quality, Customer Satisfaction, Product Development, Consulting Services, Custom Solutions, Trending News, Privacy Policy, Terms of Use, Contact Us">
+    <meta name="author" content="Astound Digital">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <title>Astound Digital</title>
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="canonical" href="https://www.astounddigital.com">
+    
 </head>
 
 <body>
-    <header>
+    <header role="navigation bar">
         <section>
-            <nav class="header">
+            <nav class="header" role="navigation" aria-label="Main Navigation" >
                 <a class="menu_item" href="#home">Home</a>
                 <a class="menu_item" href="#why_us">Why Us?</a>
                 <a class="menu_item" href="#what_we_do">What We Do?</a>
@@ -24,30 +31,30 @@
     </header>
     <!-- content  -->
     
-    <section class="slideshow_container" id="home">
+    <section class="slideshow_container" id="home" role="region" aria-label="Homepage Slideshow">
         <div class="slide fade">
-        <img src="images/image1.jpg" alt="Image 1" >
+        <img src="images/image1.jpg" alt="home_banner_1" loading="lazy" >
           <div class="text"> 
             <h1>Welcome to Astound Digital</h1>
            <p>_____Navigating what's next.</h4> 
         </div>
         </div>
         <div class="slide fade"> 
-        <img src="images/image2.jpg" alt="Image 2" >
+        <img src="images/image2.jpg" alt="home_banner_2" loading="lazy" >
         <div class="text"> 
            <h1>Innovative Solutions</h1> 
            <p> Delivering top-notch services to meet your needs.</p>
         </div>
         </div>
         <div class="slide fade">
-        <img src="images/image3.jpg" alt="Image 3" >
+        <img src="images/image3.jpg" alt="home_banner_3" loading="lazy" >
         <div class="text"> 
            <h1>Quality First</h1> 
            <p> We focus on quality and customer satisfaction.</p>
         </div>
         </div>
         <div class="slide fade">
-        <img src="images/image4.jpg" alt="Image 4" >
+        <img src="images/image4.jpg" alt="home_banner_4" loading="lazy" >
         <div class="text"> 
             <h1>Join Us Today </h3>
            <p> Experience excellence in every product we offer.</p>
@@ -56,7 +63,7 @@
     </section>
      
     
-    <section class="section_2" id="why_us">
+    <section class="section_2" id="why_us" role="region" aria-labelledby="why_us_heading">
         <h2 class="section_2_heading">Why Choose Us?</h3>
          <div class="cards">
             <div class="box_big">
@@ -70,7 +77,7 @@
         </div>
     </section>
     <!-- what we do  -->
-        <section class="section_3" id="what_we_do">
+        <section class="section_3" id="what_we_do" role="region" aria-labelledby="what_we_do_heading">
             <h2>What We Do?</h3>
             <p>We specialize in providing high-quality products and services that cater to the unique needs of our customers. Our focus is on delivering value, reliability, and exceptional customer experiences. Whether you're looking for product design, consulting services, or custom solutions, we have the expertise to deliver excellence in every project.</p>
        <div class="cards_2">
@@ -90,7 +97,7 @@
 </section>
         <!-- Trending News About Us -->
 
-    <section class="section_4" id="trending_news">
+    <section class="section_4" id="trending_news" role="region" aria-labelledby="trending_news_heading">
         <h2 class="section_4_heading">Trending News About Us</h2>
         
         <div class="cards_3">
@@ -114,17 +121,17 @@
     </div>
 </section>
     <!-- contact  -->
-     <section class="section_5" id="contact_form">
+     <section class="section_5" id="contact_form"  role="form" aria-labelledby="contact_heading">
         <h2>Contact Us</h2>
         <form class="contact_div2">  
-        <input type="text" id="name" placeholder="Your Name" required> <br>
-        <input type="email" id="email" placeholder="Your Email" required> <br>
-        <textarea name="message" id="message" placeholder="Your Message" type="text" required></textarea>
-        <button type="submit">Send Message</button>
+        <input type="text" id="name" placeholder="Your Name" onkeydown="return /[a-z\s]/i.test(event.key)"  required> <br>
+        <input type="email" id="email" placeholder="Your Email"  required> <br>
+        <textarea name="textarea" maxlength="200" minlength="10"  id="message" placeholder="Your Message" type="text" required></textarea>
+        <button type="submit" role="button">Send Message</button>
         </form>
     </section>
      <!-- privacy policy  -->
-      <section class="section_6" id="privacy">
+      <section class="section_6" id="privacy" role="region" aria-labelledby="privacy_heading">
       <h2>Privacy Policy </h2>
       <p>At Astound Digital, we respect your privacy. This Privacy Policy explains how we collect, use, and protect your personal information.    </p>
        <h4>Information We Collect</h4>
@@ -133,16 +140,16 @@
         <p>We use the information to process your orders, improve our website, send you marketing materials, and enhance your overall shopping experience.</p>
       </section>
 <!-- terms of service  -->
- <section class="section_7" id="terms">
+ <section class="section_7" id="terms"  role="region" aria-labelledby="terms_heading">
     <h2>Terms of Service</h2>
     <p>By using our website and services, you agree to comply with the following terms and conditions. Please read these terms carefully before proceeding.</p>
  </section>
-        <footer>
+        <footer role="contentinfo">
             <section class="footer_data"> 
-                <nav class="footer_nav">
+                <nav class="footer_nav" role="navigation" aria-label="Footer Navigation">
                     <p> &copy;2024 Astound Digital. All Rights Reserved.</p> 
-                    <a href="#">Privacy Policy</a>
-                    <a href="#">Terms of Use</a>
+                    <a href="#privacy">Privacy Policy</a>
+                    <a href="#terms">Terms of Use</a>
                 </nav>
             </section>
         </footer>
