@@ -16,6 +16,7 @@
 </head>
 
 <body>
+    <!-- header  -->
     <header role="navigation bar">
         <section>
             <nav class="header" role="navigation" aria-label="Main Navigation" >
@@ -23,14 +24,15 @@
                 <a class="menu_item" href="#why_us">Why Us?</a>
                 <a class="menu_item" href="#what_we_do">What We Do?</a>
                 <a class="menu_item" href="#trending_news"> Trending News</a>
+                <a class="menu_item" href="#product">Products</a>
                 <a class="menu_item" href="#contact_form">Contact Us</a>
                 <a class="menu_item" href="#privacy">Privacy Policy </a>
                 <a class="menu_item" href="#terms">Terms of Use</a>
             </nav>
     </section>
     </header>
+
     <!-- content  -->
-    
     <section class="slideshow_container" id="home" role="region" aria-label="Homepage Slideshow">
         <div class="slide fade">
         <img src="images/image1.jpg" alt="home_banner_1" loading="lazy" >
@@ -62,7 +64,7 @@
         </div>
     </section>
      
-    
+    <!-- why us heading  -->
     <section class="section_2" id="why_us" role="region" aria-labelledby="why_us_heading">
         <h2 class="section_2_heading">Why Choose Us?</h3>
          <div class="cards">
@@ -76,6 +78,7 @@
             </div>
         </div>
     </section>
+
     <!-- what we do  -->
         <section class="section_3" id="what_we_do" role="region" aria-labelledby="what_we_do_heading">
             <h2>What We Do?</h3>
@@ -120,16 +123,30 @@
         
     </div>
 </section>
+
+<!-- products  -->
+ <section id="product">
+<h2 class="product_heading">Our Products</h1>
+<div class="container" id="product_container">
+  </div>
+  <div class="pagination">
+    <button id="prevButton" disabled>Previous</button>
+    <button id="nextButton">Next</button>
+  </div>
+</section>
+
     <!-- contact  -->
      <section class="section_5" id="contact_form"  role="form" aria-labelledby="contact_heading">
         <h2>Contact Us</h2>
         <form class="contact_div2">  
-        <input type="text" id="name" placeholder="Your Name" onkeydown="return /[a-z\s]/i.test(event.key)"  required> <br>
-        <input type="email" id="email" placeholder="Your Email"  required> <br>
-        <textarea name="textarea" maxlength="200" minlength="10"  id="message" placeholder="Your Message" type="text" required></textarea>
+        <input type="text" id="name" placeholder="Your Name" onpaste="return false" onkeydown="return /[a-z\s]/i.test(event.key)"  required> <br>
+        <input type="email" id="email" placeholder="Your Email" onpaste="return false" required> <br>
+        <textarea name="textarea" maxlength="200" minlength="10" onpaste="return false"  id="message" placeholder="Your Message" type="text" required></textarea>
         <button type="submit" role="button">Send Message</button>
         </form>
     </section>
+
+
      <!-- privacy policy  -->
       <section class="section_6" id="privacy" role="region" aria-labelledby="privacy_heading">
       <h2>Privacy Policy </h2>
@@ -139,11 +156,15 @@
         <h4>How We Use Your Information</h4>
         <p>We use the information to process your orders, improve our website, send you marketing materials, and enhance your overall shopping experience.</p>
       </section>
+
+
 <!-- terms of service  -->
  <section class="section_7" id="terms"  role="region" aria-labelledby="terms_heading">
     <h2>Terms of Service</h2>
     <p>By using our website and services, you agree to comply with the following terms and conditions. Please read these terms carefully before proceeding.</p>
  </section>
+
+ <!-- footer  -->
         <footer role="contentinfo">
             <section class="footer_data"> 
                 <nav class="footer_nav" role="navigation" aria-label="Footer Navigation">
