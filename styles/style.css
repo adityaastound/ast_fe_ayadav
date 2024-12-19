@@ -540,3 +540,8 @@ textarea {
 
 }
 
+.logo{
+  height: 40px;
+  width: 100%;
+  margin-top: 1.5rem;
+}
